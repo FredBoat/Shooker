@@ -10,10 +10,10 @@ import java.util.List;
 @Controller
 public class Config {
 
-    private final List<Project> projects = new ArrayList<>();
+    private final List<Project> sentry = new ArrayList<>();
 
-    public List<Project> getProjects() {
-        return projects;
+    public List<Project> getSentry() {
+        return sentry;
     }
 
     public static class Project {

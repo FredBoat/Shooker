@@ -1,0 +1,6 @@
+# suppress inspection "SpringBootApplicationProperties" for whole file
+shooker.sentry:
+  - projectName: "fredboat"
+    webhook: "https://canary.discordapp.com/api/webhooks/370264727500095498/snip"
+server:
+  port: 3074

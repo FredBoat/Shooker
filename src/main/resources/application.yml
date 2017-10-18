@@ -1,6 +1,0 @@
-# suppress inspection "SpringBootApplicationProperties" for whole file
-shooker.projects:
-  - projectName: "foo"
-    webhook: "bar"
-  - projectName: "foo2"
-    webhook: "bar2"
