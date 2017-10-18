@@ -12,13 +12,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class RestController {
 
     private static final Logger log = LoggerFactory.getLogger(RestController.class);
+    private final Config config;
+
+    public RestController(Config config) {
+        this.config = config;
+    }
 
     @PostMapping("/sentry")
     @ResponseBody
     public String sentry(@RequestBody String body) {
         JSONObject json = new JSONObject(body);
         log.info("test");
-        return body;
+        return config.getProjects().toString();
     }
 
 }
