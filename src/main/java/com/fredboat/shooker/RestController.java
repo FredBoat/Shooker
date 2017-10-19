@@ -22,7 +22,7 @@ public class RestController {
 
     private static final Logger log = LoggerFactory.getLogger(RestController.class);
     private final Config config;
-    private static final int HORIZONTAL_CHAR_LIMIT = 70;
+    private static final int HORIZONTAL_CHAR_LIMIT = 105;
 
     public RestController(Config config) {
         this.config = config;
@@ -70,7 +70,7 @@ public class RestController {
         str.append("```");
 
         // This hack ensures the width of the embed
-        str.append("=======================================================================================\n");
+        str.append("=========================================================================================================\n");
 
         for (int i = 0; i < array.length(); i++) {
             JSONObject trace = array.getJSONObject(i);
